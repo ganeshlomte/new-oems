@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Desk Booking - Office Environment Management System(OEMS)</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+<div class="container bordered-lrb">
+    <!-- Header code starts here -->
+	<header class="row header-black-bg">
+    	<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-left alpha"><img src="images/i-logo.png" alt=""></div>
+        <div class="col-lg-10 col-md-10 col-sm-9 col-xs-7 text-center">Welcome Max Mustermann</div>
+        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-4 text-right omega"><a href="01-login.html">Log Out</a></div>
+    </header><!-- Header code ends here -->
+    <!-- Nav code starts here -->
+    <div class="row">
+        <nav class="col-lg-12 navbar-oems">
+        	<ul>
+            	<li>
+                    <a href="03-desk-booking.html" class="active">
+                        <i class="oems-sprite desk-booking"></i>
+                        <span>Desk<br>Booking</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04-booking-overview.html">
+                        <i class="oems-sprite booking-overview"></i>
+                        <span>Booking<br>Overview</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05-search-employee.html">
+                        <i class="oems-sprite search-employee"></i>
+                        <span>Search<br>Employee</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="06-personalized-setting.html">
+                        <i class="oems-sprite personalized-setting"></i>
+                        <span>Personalized<br>Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="07-car-booking.html">
+                        <i class="oems-sprite car-booking"></i>
+                        <span>Car<br>Booking</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08-fleet-management.html">
+                        <i class="oems-sprite fleet-management"></i>
+                        <span>Fleet<br>Management</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09-equipment-tracking.html">
+                        <i class="oems-sprite equipment-tracking"></i>
+                        <span>Equipment<br>Tracking</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div><!-- Nav code ends here -->
+    <section class="row desk-booking-bg">
+        <div class="col-lg-12 mt-50">
+            <!-- tab code starts here -->
+            <div class="tab-orange">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#booking" aria-controls="booking" role="tab" data-toggle="tab">Booking</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#equipment" aria-controls="equipment" role="tab" data-toggle="tab">Equipment</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#hospitality" aria-controls="hospitality" role="tab" data-toggle="tab">Hospitality</a>
+                    </li>                    
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <!-- booking tab content starts here -->
+                    <div role="tabpanel" class="tab-pane active" id="booking">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="input-group date">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                    <input type="text" class="form-control" id="startDate-deskBooking" placeholder="Start Date">
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="input-group date">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                    <input type="text" class="form-control" id="endDate-deskBooking" placeholder="End Date">
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <select class="form-control">
+                                    <option>Type</option>
+                                    <option>Office</option>
+                                    <option>Desk</option>
+                                    <option>Conference Room</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-2">
+                                <select class="form-control">
+                                    <option>Floor</option>
+                                    <option>Marketing</option>
+                                    <option>Sales</option>
+                                    <option>IT</option>
+                                    <option>Facility Management</option>
+                                    <option>Research and Development</option>
+                                    <option>Human Resources</option>
+                                    <option>Purchase</option>
+                                    <option>Accounting and Finance</option>
+                                    <option>Controlling</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-2">
+                                <button type="submit" class="btn btn-warning btn-block">
+                                    <i class="glyphicon glyphicon-search mr-10"></i> Search
+                                </button>
+                            </div>
+                        </div>
+                    </div><!-- booking tab content ends here -->
+
+                    <!-- equipment tab content starts here -->
+                    <div role="tabpanel" class="tab-pane" id="equipment">
+                        <div class="row">                            
+                            <div class="col-lg-6">
+                                <select class="form-control">
+                                    <option>Office Equipment</option>
+                                    <option>Flat Screen</option>
+                                    <option>Cabinet</option>
+                                    <option>Printer</option>
+                                    <option>Copy</option>
+                                    <option>Scanner</option>
+                                    <option>Schließfach</option>
+                                    <option>High Speed W-Lan</option>
+                                    <option>Telefonanschluss und Telefon</option>
+                                    <option>Container</option>
+                                    <option>White Board</option>
+                                    <option>Disability Access</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6">
+                                <select class="form-control">
+                                    <option>Parking Lot</option>
+                                    <option>Parking Lot 0001</option>
+                                    <option>Parking Lot 0002</option>
+                                    <option>Parking Lot 0003</option>
+                                    <option>Parking Lot 0004</option>
+                                    <option>Parking Lot 0005</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><!-- equipment tab content ends here -->
+
+                    <!-- hospitality tab content starts here -->
+                    <div role="tabpanel" class="tab-pane" id="hospitality">
+                        <div class="row">                            
+                            <div class="col-lg-6">
+                                <select class="form-control">
+                                    <option>Beverages</option>
+                                    <option>Cold Drinks</option>
+                                    <option>Hot Drinks</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6">
+                                <select class="form-control">
+                                    <option>Food</option>
+                                    <option>Catering</option>
+                                    <option>Cantine</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- hospitality tab content ends here -->
+                </div>
+            </div><!-- tab code starts here -->
+        </div>
+        <div class="clearfix"></div>
+        <!-- search result area code starts here -->
+        <div class="col-lg-12">
+            <div class="table-responsive text-center">
+            <img src="images/floor-map.jpg" alt="Office Environment Management System(OEMS)" title="Office Environment Management System(OEMS)">
+            </div>
+        </div>
+        <!-- search result area code starts here -->
+    </section>
+</div>
+
+
+
+<!-- all JS called here -->
+<script type="text/javascript" src="js/jquery.min-v1.12.4.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

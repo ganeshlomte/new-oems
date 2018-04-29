@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Car Booking - Office Environment Management System(OEMS)</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+<div class="container bordered-lrb">
+    <!-- Header code starts here -->
+	<header class="row header-black-bg">
+    	<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-left alpha"><img src="images/i-logo.png" alt=""></div>
+        <div class="col-lg-10 col-md-10 col-sm-9 col-xs-7 text-center">Welcome Max Mustermann</div>
+        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-4 text-right omega"><a href="01-login.html">Log Out</a></div>
+    </header><!-- Header code ends here -->
+    <!-- Nav code starts here -->
+    <div class="row">
+        <nav class="col-lg-12 navbar-oems">
+        	<ul>
+            	<li>
+                    <a href="03-desk-booking.html">
+                        <i class="oems-sprite desk-booking"></i>
+                        <span>Desk<br>Booking</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="04-booking-overview.html">
+                        <i class="oems-sprite booking-overview"></i>
+                        <span>Booking<br>Overview</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="05-search-employee.html">
+                        <i class="oems-sprite search-employee"></i>
+                        <span>Search<br>Employee</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="06-personalized-setting.html">
+                        <i class="oems-sprite personalized-setting"></i>
+                        <span>Personalized<br>Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="07-car-booking.html" class="active">
+                        <i class="oems-sprite car-booking"></i>
+                        <span>Car<br>Booking</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="08-fleet-management.html">
+                        <i class="oems-sprite fleet-management"></i>
+                        <span>Fleet<br>Management</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="09-equipment-tracking.html">
+                        <i class="oems-sprite equipment-tracking"></i>
+                        <span>Equipment<br>Tracking</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div><!-- Nav code ends here -->
+    <section class="row desk-booking-bg">
+        <div class="col-lg-12 mt-50">
+            <!-- tab code starts here -->
+            <div class="tab-orange">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#carBooking" aria-controls="carBooking" role="tab" data-toggle="tab">Car Booking</a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <!-- search-employee tab content starts here -->
+                    <div role="tabpanel" class="tab-pane active" id="carBooking">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="input-group date">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                    <input type="text" class="form-control" id="startDate-carBooking" placeholder="Start Date">
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="input-group date">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                    <input type="text" class="form-control" id="endDate-carBooking" placeholder="End Date">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <select class="form-control">
+                                    <option>Type</option>
+                                    <option>Small Vehicle</option>
+                                    <option>Sedan</option>
+                                    <option>Station Wagon</option>
+                                    <option>Tranporter</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-2">
+                                <button type="submit" class="btn btn-warning btn-block">
+                                    <i class="glyphicon glyphicon-search mr-10"></i> Search
+                                </button>
+                            </div>
+                        </div>
+                    </div><!-- search-employee tab content ends here -->
+                </div>
+            </div><!-- tab code starts here -->
+        </div>
+        <div class="clearfix"></div>
+        <!-- search result area code starts here -->
+        <div class="col-lg-12 bg-white">
+            <h3>Car Booking Result</h3>
+            <div class="table-responsive mb-25">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>Vehicle</th>
+                            <th>Identification</th>
+                            <th>Vehicle Type</th>
+                            <th>Parking Lot No.</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center"><input type="checkbox"></td>
+                            <td>VW Golf</td>
+                            <td>WI-V-271</td>
+                            <td>4 Door</td>
+                            <td>L4711</td>
+                            <td><button type="submit" class="btn btn-warning btn-block">Book</button></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><input type="checkbox"></td>
+                            <td>VW Golf</td>
+                            <td>WI-V-271</td>
+                            <td>4 Door</td>
+                            <td>L4711</td>
+                            <td><button type="submit" class="btn btn-warning btn-block">Book</button></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><input type="checkbox"></td>
+                            <td>VW Golf</td>
+                            <td>WI-V-271</td>
+                            <td>4 Door</td>
+                            <td>L4711</td>
+                            <td><button type="submit" class="btn btn-warning btn-block">Book</button></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><input type="checkbox"></td>
+                            <td>VW Golf</td>
+                            <td>WI-V-271</td>
+                            <td>4 Door</td>
+                            <td>L4711</td>
+                            <td><button type="submit" class="btn btn-warning btn-block">Book</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- search result area code starts here -->
+    </section>
+</div>
+
+
+
+<!-- all JS called here -->
+<script type="text/javascript" src="js/jquery.min-v1.12.4.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

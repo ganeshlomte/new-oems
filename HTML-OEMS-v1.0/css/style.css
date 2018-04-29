@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+body{ font-family: arial; }
+
+.header-black-bg { background:#000; color: #fff; padding:10px; min-height:40px; }
+.header-black-bg a { color: #fff; }
+.bordered-lrb { border: 1px solid #ececec; border-top:0; margin-bottom: 50px; padding-bottom: 10px; } 
+
+
+/* nav styling */
+.navbar-oems { margin:0 auto; text-align:center; background: #f1f1f1; padding: 40px 0 0; }
+.navbar-oems ul { margin: 0; padding: 0; list-style:none; }
+.navbar-oems li {display: inline-block; margin-bottom: 30px;}
+.navbar-oems li a {display:inline-block; min-width: 80px;text-align: center;color: #000;margin: 0 20px; font-weight: bold;}
+.navbar-oems li a:hover, .navbar-oems li a.active span { color: #f08000; text-decoration: none; }
+.navbar-oems li span {display: block; text-align:center; margin-top: 10px; }
+
+
+/* login container */
+.login-container { border: 1px solid #ececec;border-radius: 10px; max-width: 800px; margin: 20px auto 0; padding: 10px; }
+.login-container h3 { margin: 0; font-size: 18px;font-weight: bold; border-bottom: 1px solid #ececec; }
+.login-left-box { padding: 20px 40px 60px; border-right: 1px solid #ececec; margin: 20px 0; }
+
+/* desk-booking-bg classes*/
+.desk-booking-bg { background: url(../images/banner-01.jpg) no-repeat; }
+.tab-orange .nav-tabs { border-bottom: 1px solid #e79a40; }
+.tab-orange .nav-tabs > li  a { background: rgba(240, 128, 0, .2); border: 1px solid transparent; color: #fff; font-weight: bold; }
+.tab-orange .nav-tabs > li.active > a, .tab-orange .nav-tabs > li.active > a:focus, 
+.tab-orange .nav-tabs > li.active > a:hover { background: rgba(240, 128, 0, .7); color: #fff; border: 1px solid transparent; }
+.tab-orange .tab-content { background: rgba(240, 128, 0, .7); padding: 40px 20px; color: #fff; margin-bottom: 30px; }
+
+
+.bg-white { background: rgba(255, 255, 255, .9); }
+.bg-white .table th { background: rgba(240, 128, 0, .7); color:#fff }
+.bg-white .table-bordered>thead>tr>th, .bg-white .table>thead:first-child>tr:first-child>th,
+.bg-white .table-bordered>tbody>tr>td { vertical-align: middle; border: 1px solid rgba(237, 159, 69, .5); border-top: 1px solid rgba(240, 128, 0, .7) !important; }
+.bg-white input[type=checkbox] { width: 20px; height: 20px; }
+
+
+/* profile classes */
+
+.bg-grey { background: #efefef; }
+.bg-grey hr { border-top: 2px solid #404040; }
+
+
+.profile-box img { height: 100% }
+.profile-box .profile-name { background: #4d9cd5; color: #fff; }
+
+.social-info { background: #404040; }
+.social-info a { display: inline-block; border: 2px solid #fff; padding: 3px 6px; color: #fff; border-radius: 50%; margin: 5px; }
+
+.profile-info-bg {background: url(../images/profile-info-bg.jpg) no-repeat;min-height: 200px;color: #fff;background-size: cover;background-position:  right;}
+.black-overlay {background: rgba(0, 0, 0, .5);min-height: 200px; max-width: 300px; padding: 15px; }
+.profile-info-bg h3{ margin: 0 0 10px; color: #f08000; }
+.profile-info-bg a { color: #fff; }
+.profile-img { height: 180px; background: #141312; }
+
+.tab-blue .nav.nav-tabs { background: #0072c3; }
+.tab-blue .nav-tabs>li >a {color: #fff; }
+.tab-blue .nav-tabs>li.active>a, .tab-blue .nav-tabs>li.active>a:focus, 
+.tab-blue .nav-tabs>li.active>a:hover{ color: #fff; background-color: #65a9da; border: 1px solid #65a9da; }
+.tab-blue .nav>li>a { padding: 9px 15px; }
+.tab-blue .nav>li>a:focus, .nav>li>a:hover { background-color: #65a9da; border-color: #65a9da #65a9da #65a9da; }
+.tab-blue .nav-tabs { border-bottom: 1px solid #0072c3; }
+.tab-blue .tab-content { background: #fff; min-height: 380px; }
+
+.info-item { padding: 20px 0 20px 45px; }
+.info-item h3 { margin: 0 0 15px; position: relative; }
+.info-item h3 i { position: absolute; top: -2px; left:-40px; color: #0072c3; border: 2px solid #0072c3; padding: 4px; font-size: 18px; border-radius:50%; overflow: hidden; }
+
+
+
+
+
+/* common classes */
+.rf { float: right; }
+.lf { float: left; }
+.floatNone { float: none; }
+.alpha { padding-left: 0; }
+.omega { padding-right: 0; }
+
+.mt-20 { margin-top: 20px; }
+.mt-30 { margin-top: 30px; }
+.mt-40 { margin-top: 40px; }
+.mt-50 { margin-top: 50px; }
+.mt-60 { margin-top: 60px; }
+.mt-70 { margin-top: 70px; }
+.mt-80 { margin-top: 80px; }
+
+.ml-5 { margin-left: 5px; }
+.ml-10 { margin-left: 10px; }
+.ml-15 { margin-left: 15px; }
+.ml-20 { margin-left: 20px; }
+.ml-30 { margin-left: 30px; }
+.ml-40 { margin-left: 40px; }
+.ml-50 { margin-left: 50px; }
+
+.mr-5 { margin-right: 5px; }
+.mr-10 { margin-right: 10px; }
+.mr-15 { margin-right: 15px; }
+.mr-20 { margin-right: 20px; }
+.mr-30 { margin-right: 30px; }
+.mr-40 { margin-right: 40px; }
+.mr-50 { margin-right: 50px; }
+
+.mb-5 { margin-bottom: 5px; }
+.mb-10 { margin-bottom: 10px; }
+.mb-15 { margin-bottom: 15px; }
+.mb-20 { margin-bottom: 20px; }
+.mb-25 { margin-bottom: 25px; }
+
+
+.pt-20 { padding-top: 20px; }
+.pt-30 { padding-top: 30px; }
+.pt-40 { padding-top: 40px; }
+.pt-50 { padding-top: 50px; }
+.pt-60 { padding-top: 60px; }
+.pt-70 { padding-top: 70px; }
+.pt-80 { padding-top: 80px; }
+
+.pl-5 { padding-left: 5px; }
+.pl-10 { padding-left: 10px; }
+.pl-15 { padding-left: 15px; }
+.pl-20 { padding-left: 20px; }
+.pl-30 { padding-left: 30px; }
+.pl-40 { padding-left: 40px; }
+.pl-50 { padding-left: 50px; }
+
+.pr-5 { padding-right: 5px; }
+.pr-10 { padding-right: 10px; }
+.pr-15 { padding-right: 15px; }
+.pr-20 { padding-right: 20px; }
+.pr-30 { padding-right: 30px; }
+.pr-40 { padding-right: 40px; }
+.pr-50 { padding-right: 50px; }
+
+.pb-5 { padding-bottom: 5px; }
+.pb-10 { padding-bottom: 10px; }
+.pb-15 { padding-bottom: 15px; }
+.pb-20 { padding-bottom: 20px; }
+.pb-25 { padding-bottom: 25px; }
+
+
+
+
+/* sprite classes */
+.oems-sprite { background:url(../images/oems-sprite.png) no-repeat; display:inline-block; position:relative; }
+.desk-booking, .booking-overview, .search-employee, .personalized-setting, .car-booking, .fleet-management, 
+.equipment-tracking { width: 48px; height:48px; }
+
+.desk-booking { background-position: 2px 0; }
+.booking-overview { background-position: -61px 0; }
+.search-employee { background-position: -117px 0; }
+.personalized-setting { background-position: -175px 0; width: 58px; }
+.car-booking { background-position: -241px 0; width: 73px; }
+.fleet-management { background-position: -324px 0; width: 72px; }
+.equipment-tracking { background-position: -401px 0; width: 48px;}
