@@ -25,6 +25,7 @@ body{ font-family: arial; }
 .desk-booking-bg { background: url(../images/banner-01.jpg) no-repeat; }
 .tab-orange .nav-tabs { border-bottom: 1px solid #e79a40; }
 .tab-orange .nav-tabs > li  a { background: rgba(240, 128, 0, .2); border: 1px solid transparent; color: #fff; font-weight: bold; }
+.tab-orange .nav>li>a:focus, .tab-orange .nav>li>a:hover { background: rgba(240, 128, 0, .7); border: 1px solid transparent; }
 .tab-orange .nav-tabs > li.active > a, .tab-orange .nav-tabs > li.active > a:focus, 
 .tab-orange .nav-tabs > li.active > a:hover { background: rgba(240, 128, 0, .7); color: #fff; border: 1px solid transparent; }
 .tab-orange .tab-content { background: rgba(240, 128, 0, .7); padding: 40px 20px; color: #fff; margin-bottom: 30px; }
@@ -68,7 +69,18 @@ body{ font-family: arial; }
 .info-item h3 { margin: 0 0 15px; position: relative; }
 .info-item h3 i { position: absolute; top: -2px; left:-40px; color: #0072c3; border: 2px solid #0072c3; padding: 4px; font-size: 18px; border-radius:50%; overflow: hidden; }
 
-
+/* booking overview calendar */
+#bookingOverCalendar { max-width: 800px; margin: 0 auto; background: #fff; padding: 20px; border: 1px solid #ccc; }
+.fc th { background: #f08000; color: #fff; padding: 10px 0px; }
+.fc th, .fc td {border-color: rgba(240, 128, 0, .4); }
+.fc td { background: #f1f1f1; }
+.fc td a {color: #f08000;}
+.fc-event-container .fc-event, .fc-event-container .fc-event-dot, .fc td a.fc-event, .fc td a.fc-event-dot { background: rgba(240, 128, 0, .61); color:  #fff; border: 1px solid transparent; padding:2px 5px; text-align: center;}
+.fc-state-default { outline: none; border: 1px solid; background-color: rgba(240, 128, 0, .3); background-image: none; border-color: #f08000; color: #333; text-shadow: none; box-shadow: none; }
+.fc-state-active, .fc-state-down, .fc-state-default:hover { background-color: rgba(240, 128, 0, .7); color: #fff; }
+.fc button { padding: 5px 12px; height: auto; text-transform: capitalize; }
+.fc-center h2 { color: #f08000; }
+.fc-ltr .fc-basic-view .fc-day-top .fc-day-number { float: left; font-size: 20px; padding: 10px; }
 
 
 
@@ -152,6 +164,9 @@ body{ font-family: arial; }
 .booking-overview { background-position: -61px 0; }
 .search-employee { background-position: -117px 0; }
 .personalized-setting { background-position: -175px 0; width: 58px; }
-.car-booking { background-position: -241px 0; width: 73px; }
+.car-booking { background-position: -241px 0; width: 60px; }
 .fleet-management { background-position: -324px 0; width: 72px; }
 .equipment-tracking { background-position: -401px 0; width: 48px;}
+
+
+gani@dms

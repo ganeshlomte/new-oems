@@ -8,7 +8,9 @@
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
 <title>Booking Overview - Office Environment Management System(OEMS)</title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.min.css">
+<link rel="stylesheet" type="text/css" href="css/fullcalendar.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/fullcalendar.print.min.css" media="print">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -76,7 +78,7 @@
     </div><!-- Nav code ends here -->
     <section class="row desk-booking-bg">
         <div class="mt-50 col-lg-12">
-            Booking Overview
+            <div id="bookingOverCalendar"></div>
         </div>
     </section>
 </div>
@@ -87,6 +89,65 @@
 <script type="text/javascript" src="js/jquery.min-v1.12.4.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/fullcalendar.min.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#bookingOverCalendar').fullCalendar({
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,basicWeek,basicDay'
+      },
+      defaultDate: '2018-05-12',
+      navLinks: true, // can click day/week names to navigate views
+      editable: true,
+      eventLimit: true, // allow "more" link when too many events
+      events: [
+        {
+          title: 'All Day Event',
+          start: '2018-05-01'
+        },
+        {
+          title: 'All Day Event',
+          start: '2018-05-01'
+        },
+        {
+          title: 'All Day Event',
+          start: '2018-05-01'
+        },
+        {
+          title: 'All Day Event',
+          start: '2018-05-01'
+        },{
+          title: 'All Day Event',
+          start: '2018-05-01'
+        },
+        {
+          title: 'All Day Event',
+          start: '2018-05-01'
+        },
+        {
+          title: 'All Day Event',
+          start: '2018-05-01'
+        },
+        {
+          title: 'Long Event',
+          start: '2018-05-07',
+          end: '2018-05-10'
+        }
+        ,
+        {
+          title: 'Long Event 2',
+          start: '2018-05-07',
+          end: '2018-05-10'
+        }
+      ]
+    });
+
+  });
+
+</script>
 </body>
 </html>
